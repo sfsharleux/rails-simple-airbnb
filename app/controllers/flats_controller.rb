@@ -23,12 +23,6 @@ class FlatsController < ApplicationController
     end
   end
 
-  def show
-  end
-
-  def edit
-  end
-
   def update
     @flat.update(flat_params)
     redirect_to flat_path(@flat)
