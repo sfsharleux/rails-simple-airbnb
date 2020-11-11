@@ -20,11 +20,11 @@ class FlatController < ApplicationController
     end
   end
 
-  def show
-  end
+  # def show
+  # end
 
-  def edit
-  end
+  # def edit
+  # end
 
   def update
     @flat.update_(flat_params)
@@ -36,7 +36,7 @@ class FlatController < ApplicationController
     redirect_to flats_path
   end
 
-private
+  private
 
   def set_flat
     @flat = Flat.find(params[:id])
